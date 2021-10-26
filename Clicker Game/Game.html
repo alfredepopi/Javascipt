@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>My Clicker Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mario Clicker</h1>
+        </header>
+        <section id="gold">Coins: 0</section>
+        <button onclick="addGold(1)">Click</button>
+        <section id="gps">CPS: 0.00</section>
+            <h1>Shop:</h1>
+            <div class="shop">
+            <div class="minions">
+            <h2>Mario:</h2>
+            <img alt="mario" src="mario.jpg" width="100" height="100"/>
+            <section id="cost1">Cost : 10</section>
+            <section id="owned1">Owned : 0</section>
+            <button onclick="buyMinion(1)">Buy</button>
+            </div>
+            <div class="minions">
+            <h2>Luigi:</h2>
+            <img alt="luigi" src="luigi.jpg" width="100" height="100"/>
+            <section id="cost2">Cost : 100</section>
+            <section id="owned2">Owned : 0</section>
+            <button onclick="buyMinion(2)">Buy</button>
+        </div>
+        <div class="minions">
+            <h2>Bowser:</h2>
+            <img alt="bowser" src="bowser.png" width="100" height="100"/>
+            <section id="cost3">Cost : 500</section>
+            <section id="owned3">Owned : 0</section>
+            <button onclick="buyMinion(3)">Buy</button>
+        </div>
+        </div>
+        <button onclick="save_game()">Save</button>
+        <button onclick="resume_game()">Resume</button>
+    </body>
+</html>
